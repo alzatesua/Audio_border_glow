@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schemalist>
+  <schema id="org.gnome.shell.extensions.audio-border" path="/org/gnome/shell/extensions/audio-border/">
+
+    <key name="pixels-per-segment" type="i">
+      <default>5</default>
+      <summary>Puntos de ancho</summary>
+      <description>Cuántos cuadritos mostrar en cada fila</description>
+      <range min="1" max="20"/>
+    </key>
+
+    <key name="pixel-size" type="i">
+      <default>4</default>
+      <summary>Tamaño de cada punto</summary>
+      <description>Tamaño en píxeles de cada cuadrito</description>
+      <range min="2" max="15"/>
+    </key>
+
+    <key name="pixel-gap" type="i">
+      <default>2</default>
+      <summary>Espacio entre puntos</summary>
+      <description>Espacio en píxeles entre cada cuadrito</description>
+      <range min="0" max="10"/>
+    </key>
+
+    <key name="sensitivity" type="d">
+      <default>1.5</default>
+      <summary>Sensibilidad</summary>
+      <description>Multiplicador de sensibilidad al audio</description>
+      <range min="0.1" max="5.0"/>
+    </key>
+
+    <key name="pulse-mode" type="b">
+      <default>false</default>
+      <summary>Modo pulso</summary>
+      <description>Suaviza la animación en lugar de usar relleno por segmentos</description>
+    </key>
+
+    <key name="gradient-mode" type="b">
+      <default>false</default>
+      <summary>Modo gradiente</summary>
+      <description>Usar tres colores en gradiente en lugar de un solo color</description>
+    </key>
+
+    <key name="color" type="s">
+      <default>'#00ffcc'</default>
+      <summary>Color único</summary>
+      <description>Color cuando el modo gradiente está desactivado</description>
+    </key>
+
+    <key name="color-bottom" type="s">
+      <default>'#00ffcc'</default>
+      <summary>Color base (abajo)</summary>
+      <description>Color en la parte inferior del borde (volumen bajo)</description>
+    </key>
+
+    <key name="color-middle" type="s">
+      <default>'#0088ff'</default>
+      <summary>Color medio</summary>
+      <description>Color en el centro del borde (volumen medio)</description>
+    </key>
+
+    <key name="color-top" type="s">
+      <default>'#ff0055'</default>
+      <summary>Color tope (arriba)</summary>
+      <description>Color en la parte superior del borde (volumen alto)</description>
+    </key>
+
+  </schema>
+</schemalist>

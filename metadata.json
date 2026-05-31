@@ -1,0 +1,10 @@
+{
+  "name": "Audio Border Glow",
+  "description": "Borde de pantalla reactivo al audio para GNOME Shell",
+  "uuid": "audio-border@custom",
+  "version": 2,
+  "shell-version": ["46"],
+  "settings-schema": "org.gnome.shell.extensions.audio-border",
+  "gettext-domain": "audio-border",
+  "url": "https://github.com/yourusername/audio-border"
+}
